@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Droguri</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Stop Droguri</h1>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#facts">Informații</a></li>
+                <li><a href="#help">Ajutor</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Bine ai venit!</h2>
+        <p>Împreună putem preveni consumul de droguri prin educație și sprijin.</p>
+        <img src="images/stop_drugs.jpg" alt="Stop Droguri">
+    </section>
+
+    <section id="facts" class="section">
+        <h2>Informații utile</h2>
+        <p>Află efectele consumului de droguri și cum să le previi.</p>
+        <img src="images/effects.jpg" alt="Efectele Drogurilor">
+    </section>
+
+    <section id="help" class="section">
+        <h2>Ai nevoie de ajutor?</h2>
+        <p>Contactează specialiștii care te pot ajuta să scapi de dependență.</p>
+        <button onclick="showMessage()">Solicită ajutor</button>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Scrie-ne un mesaj și te vom ajuta!</p>
+        <form>
+            <label for="name">Nume:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Trimite</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stop Droguri. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
